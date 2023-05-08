@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <div class="full">
+        <div class="main">
+            <div class="sidenav" id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="main.html">Home</a>
+                <a href="intro.html">Introduction</a>
+                <a href="marks.html">Education</a>
+                <a href="pro.html">Projects\Learning</a>
+                <a href="contact.html">Contact</a>
+                <button id="res"><a href="https://drive.google.com/file/d/1sY2qFPzUlbeGa560__phYFLiaOCXdMJ2/view?usp=sharing" target="_blank">Resume\CV</a></button>
+            </div>
+            <span onclick="openNav()">
+                <a href="#" class="nav" id="nav">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </a></span>
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/codeur_sahil_08/" target="_blank">
+                            <img src="Logo/instaa.ico" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/codeurSahil" target="_blank">
+                            <img src="Logo/fbb.ico" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/sahil-saini-480926252/" target="_blank">
+                            <img src="Logo/in.ico" alt="Linked In">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/codeurSahil" target="_blank">
+                            <img src="Logo/tw.ico" alt="Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SahilSaini2003" target="_blank">
+                            <img src="Logo/hub.png" alt="Git Hub" width="32px" height="32px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="back" id="back"></div>
+            <div class="here">
+                <div class="text">Contact me Here.</div>
+                <div class="me">
+                    <div class="brand">G-Mail :</div>
+                    <div class="highlight" id="mail">codeursahil2233@gmail.com</div>
+                    <div class="center">
+                        <button class="button" onclick="copy(0)">Copy Text</button>
+                    </div>
+                    <div class="brand">Instagram :</div>
+                    <div class="highlight" id="inst">codeur_sahil_08</div>
+                    <div class="center">
+                        <button class="button" onclick="copy(1)">Copy Text</button>
+                    </div>
+                    <div class="brand">Facebook :</div>
+                    <div class="highlight" id="lin">codeursahil</div>
+                    <div class="center">
+                        <button class="button" onclick="copy(2)">Copy Text</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="nav.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

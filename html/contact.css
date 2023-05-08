@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.loader {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    left: -100%;
+    transition: 0.3s;
+}
+
+.page1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(62, 141, 215);
+}
+
+.page1 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    -webkit-text-stroke: 0.2px rgb(48, 223, 217);
+    color: rgb(29, 29, 29);
+    font-family: 'Alkatra', cursive;
+    text-align: center;
+}
+
+.page2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav div {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.nav {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    margin-top: 10px;
+    margin-right: 0;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.nav:hover div {
+    width: 30px;
+}
+
+.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 75%;
+}
+
+.link ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 23px;
+}
+
+.slider {
+    width: 90%;
+    height: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 20px auto;
+}
+
+.sidenav {
+    background-image: url(Bg/nav5.jpg);
+    font-family: 'Farsan', cursive;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    -webkit-text-stroke: 2px black;
+    color: #0922c8;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.back {
+    background-image: url(Bg/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: green;
+    font-size: 25px;
+    display: block;
+}
+
+.here {
+    position: absolute;
+    display: inline;
+}
+
+.text {
+    -webkit-text-stroke: 1px #fff;
+    margin-top: -80px;
+}
+
+.brand {
+    color: #040712;
+    margin-top: 25px;
+}
+
+.highlight {
+    background-color: rgba(213, 208, 213, 0.632);
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+
+.center {
+    margin-top: 3px;
+    margin-left: 40%;
+}
+
+.button {
+    font-size: 15px;
+    border: 2px;
+    border-color: black;
+    border-radius: 2px;
+    background-color: rgba(219, 211, 211, 0.763);
+    color: #080202;
+    width: 100px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.975);
+}
+
+.button:active {
+    background-color: rgb(50, 133, 25);
+    color: rgb(50, 133, 25);
+}
+
+@media screen and (min-width: 601px) {
+    .text {
+        font-size: 75px;
+    }
+
+    .brand {
+        font-size: 35px;
+    }
+
+    .highlight {
+        font-size: 25px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        font-size: 40px;
+    }
+
+    .brand {
+        font-size: 25px;
+    }
+
+    .highlight {
+        font-size: 20px;
+        width: 300px;
+    }
+}
+
+#res {
+    display: block;
+    margin-left: 25px;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgba(59, 32, 167, 0.618);
+    border-radius: 12px;
+    font-family: 'Farsan', cursive;
+}
+
+#res a {
+    margin-left: -20px;
+}

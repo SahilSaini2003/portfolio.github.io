@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marks.css">
+    <title>Marks Statements</title>
+</head>
+
+<body>
+    <div class="loader" id="loader"></div>
+    <div class="page1" id="page1">
+        <h1 id="h1">This Page Consist of my Education Certificates / Marks Sheets.</h1>
+    </div>
+    <div class="page2" id="page2">
+        <div class="full">
+            <div class="back" id="back"></div>
+            <div class="main">
+                <div class="sidenav" id="mySidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="main.html">Home</a>
+                    <a href="intro.html">Introduction</a>
+                    <a href="marks.html">Education</a>
+                    <a href="pro.html">Projects\Learning</a>
+                    <a href="contact.html">Contact</a>
+                    <button id="res"><a href="https://drive.google.com/file/d/1sY2qFPzUlbeGa560__phYFLiaOCXdMJ2/view?usp=sharing" target="_blank">Resume\CV</a></button>
+                </div>
+                <span onclick="openNav()">
+                    <a href="#" class="nav" id="nav">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </a></span>
+                <div class="link">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/codeur_sahil_08/" target="_blank">
+                                <img src="Logo/instaa.ico" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/codeurSahil" target="_blank">
+                                <img src="Logo/fbb.ico" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sahil-saini-480926252/" target="_blank">
+                                <img src="Logo/in.ico" alt="Linked In">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/codeurSahil" target="_blank">
+                                <img src="Logo/tw.ico" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/SahilSaini2003" target="_blank">
+                                <img src="Logo/hub.png" alt="Git Hub" width="32px" height="32px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="p1" id="p1">
+                        <div class="cer black" style="margin-top: -150px;">Education</div>
+                        <div class="prim butt">
+                            <button class="button" onclick="primary()">Primary Education</button>
+                        </div>
+                        <div class="second butt">
+                            <button class="button" onclick="secondary()">Secondary Education</button>
+                        </div>
+                        <div class="gra butt">
+                            <button class="button" onclick="graduation()">Graduation</button>
+                        </div>
+                    </div>
+                    <div class="p2" id="p2" hidden>
+                        <div class="cer black" onclick="edu(1)" id="prim">Primary Education</div>
+                        <div class="but">
+                            <div>
+                                <button class="button" onclick="img(0)">L.K.G</button>
+                                <button class="button" onclick="img(1)">U.K.G</button>
+                                <button class="button" onclick="img(2)">1st</button>
+                            </div>
+                            <div>
+                                <button class="button" onclick="img(3)">2nd</button>
+                                <button class="button" onclick="img(4)">3rd</button>
+                                <button class="button" onclick="img(5)">4th</button>
+                            </div>
+                            <div>
+                                <button class="button" onclick="img(6)">5th</button>
+                                <button class="button" onclick="img(7)">7th</button>
+                                <button class="button" onclick="img(8)">8th</button>
+                            </div>
+                            <div>
+                                <button class="button" onclick="img(9)">9th</button>
+                                <button class="button" onclick="img(10)">10th</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p3" id="p3" hidden>
+                        <div class="cer black" onclick="edu(2)" id="secd">Secondary Education</div>
+                        <div>
+                            <button class="button" onclick="img(11)">11th</button>
+                        </div>
+                        <div>
+                            <button class="button" onclick="img(12)">12th</button>
+                        </div>
+                    </div>
+                    <div class="p4" id="p4" hidden>
+                        <div class="cer black" onclick="edu(3)" id="grad">Graduation</div>
+                        <div>
+                            <button class="button" onclick="img(13)">1st Sem</button>
+                        </div>
+                    </div>
+                    <div id="p">
+                        <div class="p5" id="p5" hidden>
+                            <div class="cer" id="inner" onclick="back()"></div>
+                            <div class="img">
+                                <img src="" alt="Result Image" onclick="fullscreen()" id="image" height="100%">
+                                <div id="info">*Tap Img To Zoom...</div>
+                            </div>
+                            <div>
+                                <button onclick="sheet()" id="spsheet">SpreadSheet View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img2" id="zoom" hidden>
+                    <span onclick="norm()">&times;</span>
+                    <div>
+                        <img src="" alt="Reasult Image" id="result" height="100%" style="width: 80%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="nav.js"></script>
+    <script src="marks.js"></script>
+</body>
+
+</html>
